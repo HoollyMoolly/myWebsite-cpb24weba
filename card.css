@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    font-size: 22px;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.card{
+    width:80%;
+    & .card-header{
+        background-color: #eef;
+        border-radius: 20px;
+        padding: 20px;
+        & .content{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            & .profile{
+                & img{
+                    padding: 5px 10px;
+                    background-color: #fff;
+                }
+            }
+        }
+    }
+    & .fter{
+        text-align: center;
+    }
+}
+@media (max-width: 800px) {
+    .content{
+        display: block !important;
+    }
+}
